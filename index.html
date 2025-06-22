@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <h1>
+    <span class="lang en">Welcome to Wares Wardak Hospital</span>
+    <span class="lang fa d-none">به شفاخانه معالجوی وارث وردک خوش آمدید</span>
+    <span class="lang ps d-none">د وارث وردک معالجوی روغتون ته ښه راغلاست</span>
+  </h1>  
+  <div class="text-end p-3">
+    <button class="btn btn-outline-primary btn-sm me-2" id="btn-en">English</button>
+    <button class="btn btn-outline-primary btn-sm" id="btn-fa">دری</button>
+    <button class="btn btn-outline-primary btn-sm" id="btn-ps">پښتو</button>
+  </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wares Wardak Hospital</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Wares Wardak Hospital</a>
+    </div>
+  </nav>
+
+  <header class="text-center my-4">
+    <h1>Welcome to Wares Wardak Hospital</h1>
+    <p>Located in the heart of 5th District, Kabul – serving the community with compassion and care</p>
+    <!-- Insert hospital photo here -->
+    <img src="c:\Users\Sayed's\OneDrive\Desktop\homework\594385c1-c9f9-444f-a8c7-b1ed15c481bd.JPG" alt="Wares Wardak Hospital" class="img-fluid my-3 rounded">
+  </header>
+ 
+  
+  <section class="container">
+    <h2>Our Services</h2>
+    <ul class="list-group mb-4">
+      <li class="list-group-item">24/7 Emergency Services</li>
+      <li class="list-group-item">Diagnostic & Imaging</li>
+      <li class="list-group-item">Outpatient & Inpatient Care</li>
+      <li class="list-group-item">Pediatrics and Surgery</li>
+    </ul>
+    <section class="container mt-5">
+      <h2>Our Doctors & Departments</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <h5>Dr. Ahmad Wali – Cardiology</h5>
+          <p>Expert in heart health and cardiovascular diagnostics.</p>
+        </div>
+        <div class="col-md-6 mb-4">
+          <h5>Dr. Layla Sadat – Pediatrics</h5>
+          <p>Caring for children's health and developmental needs.</p>
+        </div>
+        <div class="col-md-6 mb-4">
+          <h5>Dr. Omar Farid – Surgery</h5>
+          <p>Leading surgical specialist with 15+ years of experience.</p>
+        </div>
+        <div class="col-md-6 mb-4">
+          <h5>Dr. Mariam Shafi – Internal Medicine</h5>
+          <p>Treating chronic illnesses and providing general medical care.</p>
+        </div>
+      </div>
+    </section>
+    <section class="container mt-5">
+      <h2>Book an Appointment</h2>
+      <form>
+        <div class="mb-3">
+          <label for="fullName" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="fullName" placeholder="Enter your name" required>
+        </div>
+        <div class="mb-3">
+          <label for="phoneNumber" class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" id="phoneNumber" placeholder="+93..." required>
+        </div>
+        <div class="mb-3">
+          <label for="appointmentDate" class="form-label">Preferred Date</label>
+          <input type="date" class="form-control" id="appointmentDate" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </section>
+    
+    <h2>Location</h2>
+    <p>
+      📍 Wares Wardak Hospital, 5th District, Kabul, Afghanistan<br>
+      <a href="https://maps.app.goo.gl/cXXjwhmX4VoS6PUFA" target="_blank">
+        View Location on Google Maps
+      </a>
+    </p>
+
+    <h2>Contact Us</h2>
+    <p>📞 Call us for more information or to make an appointment: <a href="tel:+93785812055">+93 785 812 055</a></p>
+    
+  </section>
+
+  <footer class="bg-primary text-white text-center p-3 mt-5">
+    &copy; 2025 Wares Wardak Hospital. All rights reserved.
+  </footer>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Wares Wardak Hospital</a>
+    <div>
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row gap-3">
+    <li class="nav-item">
+      <a class="nav-link text-white" href="index.html">Home</a>
+    </li>
+  <li class="nav-item">
+  <a class="nav-link text-white" href="about.html">About Us</a>
+  </li>
+  </ul> 
+  </div>
+  </div>
+  </nav>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('h1').hide().fadeIn(2000);
+    });
+  </script>
+</body>
+</html>
+<script>
+  $('#btn-en').click(function() {
+    $('.lang').addClass('d-none');
+    $('.lang.en').removeClass('d-none');
+  });
+
+  $('#btn-fa').click(function() {
+    $('.lang').addClass('d-none');
+    $('.lang.fa').removeClass('d-none');
+  });
+
+  $('#btn-ps').click(function() {
+    $('.lang').addClass('d-none');
+    $('.lang.ps').removeClass('d-none');
+  });
+</script>

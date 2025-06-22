@@ -1,0 +1,15 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f1eded;
+  }
+  
+  h2 {
+    color: #49160c;
+  }
+  .container {
+    max-width: 1200px;
+  }
+  body {
+    background-color: lightblue;
+  }
+  
